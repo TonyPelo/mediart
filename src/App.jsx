@@ -275,7 +275,7 @@ export default function App() {
             </h1>
 
             <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed mb-10 max-w-2xl font-normal">
-              Nous sommes <strong className="text-neutral-950 font-semibold">Médiart</strong>, une équipe d'étudiants en dernière année de BUT Métiers du Multimédia et de l'Internet. Nous concevons votre site web et gérons vos réseaux sociaux <strong className="text-neutral-950 font-semibold">100 % gratuitement</strong> pour soutenir votre cause.
+              Nous sommes <strong className="text-neutral-950 font-semibold">Médiart</strong>, une équipe d'étudiants en dernière année de BUT Métiers du Multimédia et de l'Internet. Nous concevons votre site web, votre identité visuelle et gérons vos réseaux sociaux <strong className="text-neutral-950 font-semibold">100 % gratuitement</strong> pour soutenir votre cause.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -326,13 +326,13 @@ export default function App() {
               Nos pôles d'expertise
             </span>
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-neutral-950">
-              Deux leviers essentiels pour développer votre visibilité.
+              Trois leviers essentiels pour développer votre visibilité.
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Carte 1 : Site Web */}
-            <div className="bg-white border-2 border-neutral-950 p-8 sm:p-12 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] hover:shadow-[8px_8px_0px_0px_rgba(220,38,38,1)]">
+            <div className="bg-white border-2 border-neutral-950 p-8 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] hover:shadow-[8px_8px_0px_0px_rgba(220,38,38,1)]">
               <div>
                 <div className="w-14 h-14 bg-red-600 text-white flex items-center justify-center mb-8">
                   <Globe className="w-7 h-7" />
@@ -340,28 +340,28 @@ export default function App() {
                 <div className="inline-block bg-neutral-100 text-neutral-950 text-xs font-bold uppercase px-3 py-1 mb-4">
                   Pôle Développement & UX/UI
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black mb-4">
+                <h3 className="text-2xl font-black mb-4">
                   Création & Refonte de Site Web
                 </h3>
-                <p className="text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-neutral-600 text-sm mb-8 leading-relaxed">
                   Un site internet moderne, rapide et pensé pour convertir vos visiteurs en donateurs, adhérents ou bénévoles. Nous créons une plateforme facile à administrer pour vos équipes.
                 </p>
 
-                <ul className="space-y-4 mb-10">
+                <ul className="space-y-4 mb-10 text-sm">
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
                     <span className="text-neutral-800 font-medium"><strong>Design UX/UI sur-mesure :</strong> Maquettage complet sur Figma adapté à votre charte et accessible à tous.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
                     <span className="text-neutral-800 font-medium"><strong>Développement clé en main :</strong> Intégration sous WordPress (Elementor), CMS ou développement sur-mesure.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
                     <span className="text-neutral-800 font-medium"><strong>Objectifs associatifs :</strong> Mise en valeur de vos actions, intégration de formulaires de dons (HelloAsso) et prise de contact simplifiée.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
                     <span className="text-neutral-800 font-medium"><strong>100 % Responsive & SEO :</strong> Parfaitement adapté aux mobiles et optimisé pour être trouvé sur Google.</span>
                   </li>
                 </ul>
@@ -370,45 +370,45 @@ export default function App() {
               <a 
                 href="#contact" 
                 onClick={(e) => handleSmoothScroll(e, '#contact')}
-                className="inline-flex items-center gap-2 font-bold text-neutral-950 group-hover:text-red-600 transition-colors pt-4 border-t border-neutral-200"
+                className="inline-flex items-center gap-2 text-sm font-bold text-neutral-950 group-hover:text-red-600 transition-colors pt-4 border-t border-neutral-200"
               >
-                Demander une création ou refonte de site
+                Demander un site web
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
             {/* Carte 2 : Réseaux Sociaux */}
-            <div className="bg-white border-2 border-neutral-950 p-8 sm:p-12 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] hover:shadow-[8px_8px_0px_0px_rgba(220,38,38,1)]">
+            <div className="bg-white border-2 border-neutral-950 p-8 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] hover:shadow-[8px_8px_0px_0px_rgba(220,38,38,1)]">
               <div>
                 <div className="w-14 h-14 bg-neutral-950 text-white flex items-center justify-center mb-8 group-hover:bg-red-600 transition-colors">
                   <Share2 className="w-7 h-7" />
                 </div>
                 <div className="inline-block bg-neutral-100 text-neutral-950 text-xs font-bold uppercase px-3 py-1 mb-4">
-                  Pôle Communication, Vidéo & Création
+                  Pôle Communication & Vidéo
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black mb-4">
+                <h3 className="text-2xl font-black mb-4">
                   Gestion des Réseaux Sociaux
                 </h3>
-                <p className="text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-neutral-600 text-sm mb-8 leading-relaxed">
                   Faites rayonner vos combats et vos événements sur Instagram, LinkedIn, YouTube ou TikTok. Nous produisons des contenus visuels et vidéos percutants qui engagent votre communauté.
                 </p>
 
-                <ul className="space-y-4 mb-10">
+                <ul className="space-y-4 mb-10 text-sm">
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
                     <span className="text-neutral-800 font-medium"><strong>Stratégie éditoriale :</strong> Définition de votre ligne éditoriale, du calendrier de publication et des thématiques porteuses.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
-                    <span className="text-neutral-800 font-medium"><strong>Création graphique & Motion :</strong> Conception d'affiches, carrousels pédagogiques, stories et habillages animés (Illustrator, Figma, Fusion).</span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Contenus & Motion :</strong> Conception de carrousels pédagogiques, stories et habillages animés (Fusion, Figma).</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
-                    <span className="text-neutral-800 font-medium"><strong>Production vidéo & Interviews :</strong> Tournage, montage (DaVinci Resolve) et capsules vidéos pour mettre en valeur vos actions et bénévoles.</span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Production vidéo & Interviews :</strong> Tournage, montage (DaVinci Resolve) et capsules vidéos pour valoriser vos bénévoles.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-red-600 mt-2.5 shrink-0"></span>
-                    <span className="text-neutral-800 font-medium"><strong>Kit d'autonomie :</strong> Nous vous livrons des modèles prêts à l'emploi pour que vous puissiez continuer facilement après notre intervention.</span>
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Kit d'autonomie :</strong> Modèles prêts à l'emploi pour continuer facilement après notre intervention.</span>
                   </li>
                 </ul>
               </div>
@@ -416,9 +416,55 @@ export default function App() {
               <a 
                 href="#contact" 
                 onClick={(e) => handleSmoothScroll(e, '#contact')}
-                className="inline-flex items-center gap-2 font-bold text-neutral-950 group-hover:text-red-600 transition-colors pt-4 border-t border-neutral-200"
+                className="inline-flex items-center gap-2 text-sm font-bold text-neutral-950 group-hover:text-red-600 transition-colors pt-4 border-t border-neutral-200"
               >
                 Confier mes réseaux sociaux
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+
+            {/* Carte 3 : Création Graphique / Branding / Identité Visuelle */}
+            <div className="bg-white border-2 border-neutral-950 p-8 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] hover:shadow-[8px_8px_0px_0px_rgba(220,38,38,1)]">
+              <div>
+                <div className="w-14 h-14 bg-red-600 text-white flex items-center justify-center mb-8">
+                  <Palette className="w-7 h-7" />
+                </div>
+                <div className="inline-block bg-neutral-100 text-neutral-950 text-xs font-bold uppercase px-3 py-1 mb-4">
+                  Pôle Branding & Design
+                </div>
+                <h3 className="text-2xl font-black mb-4">
+                  Identité Visuelle & Création Graphique
+                </h3>
+                <p className="text-neutral-600 text-sm mb-8 leading-relaxed">
+                  Donnez à votre association une image forte, professionnelle et mémorable. Nous créons ou modernisons votre identité visuelle et vos supports de communication.
+                </p>
+
+                <ul className="space-y-4 mb-10 text-sm">
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Logo & Refonte (Rebranding) :</strong> Création d'un logotype moderne et porteur de sens, ou modernisation de votre logo actuel.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Charte graphique complète :</strong> Définition de vos couleurs, typographies et univers visuel pour garantir une image cohérente.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Supports Print & Événementiel :</strong> Conception d'affiches de campagnes, flyers, kakémonos et brochures (Illustrator, InDesign).</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-red-600 mt-2 shrink-0"></span>
+                    <span className="text-neutral-800 font-medium"><strong>Kit de marque clé en main :</strong> Livraison de tous les fichiers sources vectoriels et guide d'utilisation pour vos bénévoles.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a 
+                href="#contact" 
+                onClick={(e) => handleSmoothScroll(e, '#contact')}
+                className="inline-flex items-center gap-2 text-sm font-bold text-neutral-950 group-hover:text-red-600 transition-colors pt-4 border-t border-neutral-200"
+              >
+                Créer mon identité visuelle
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -759,7 +805,7 @@ export default function App() {
                 Discutons de votre association.
               </h2>
               <p className="text-neutral-400 mb-8 leading-relaxed">
-                Vous avez besoin d'un nouveau site internet, d'une refonte ou d'un coup de boost sur vos réseaux sociaux ? Remplissez ce formulaire ou contactez-nous directement pour organiser un court échange de 10 minutes.
+                Vous avez besoin d'un nouveau site internet, d'une refonte, d'une identité visuelle ou d'un coup de boost sur vos réseaux sociaux ? Remplissez ce formulaire ou contactez-nous directement pour organiser un court échange de 10 minutes.
               </p>
 
               <div className="space-y-4 text-sm text-neutral-300">
@@ -850,10 +896,11 @@ export default function App() {
                           required
                           className="w-full bg-neutral-950 border border-neutral-800 px-4 py-3 text-white focus:outline-none focus:border-red-600 transition-colors"
                         >
-                          <option value="Pack Complet (Site Web + Réseaux Sociaux)">Pack Complet (Site Web + Réseaux Sociaux)</option>
+                          <option value="Pack Complet (Site Web + Réseaux + Branding)">Pack Complet (Site Web + Réseaux + Branding)</option>
                           <option value="Refonte d'un site existant">Refonte d'un site existant</option>
                           <option value="Création d'un nouveau site web">Création d'un nouveau site web</option>
                           <option value="Gestion des réseaux sociaux uniquement">Gestion des réseaux sociaux uniquement</option>
+                          <option value="Identité visuelle / Création graphique">Identité visuelle / Création graphique</option>
                         </select>
                       </div>
                     </div>
