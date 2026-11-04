@@ -165,7 +165,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-neutral-950 font-sans selection:bg-[#A30300] selection:text-white">
+    <div className="min-h-screen bg-white text-neutral-950 selection:bg-[#A30300] selection:text-white">
       
       {/* 1. NAVBAR */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-200">
