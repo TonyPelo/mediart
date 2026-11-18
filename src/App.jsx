@@ -25,6 +25,9 @@ import {
 } from 'lucide-react';
 
 export default function App() {
+  // 👇 Changez 'svg' en 'png' ici si vous avez exporté vos logos en PNG
+  const LOGO_EXT = 'svg';
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('Tous');
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -171,18 +174,17 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            {/* Logo */}
+            {/* Logo Navbar */}
             <a 
               href="#" 
               onClick={(e) => handleSmoothScroll(e, '#')}
-              className="flex items-center gap-2 group"
+              className="flex items-center group"
             >
-              <div className="w-10 h-10 bg-neutral-950 text-white flex items-center justify-center font-black text-xl tracking-tighter group-hover:bg-[#A30300] transition-colors">
-                M<span className="text-[#A30300] group-hover:text-white">.</span>
-              </div>
-              <span className="font-extrabold text-2xl tracking-tight">
-                Médi<span className="text-[#A30300]">art</span>
-              </span>
+              <img
+                src={`/logo-noir.${LOGO_EXT}`} 
+                alt="Logo Médiart" 
+                className="h-10 w-auto object-contain group-hover:opacity-85 transition-opacity"
+              />
             </a>
 
             {/* Navigation Desktop */}
@@ -318,8 +320,13 @@ export default function App() {
           </div>
         </div>
 
-        <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/4 select-none pointer-events-none opacity-5">
-          <span className="text-[28rem] font-black leading-none text-neutral-950">M.</span>
+        {/* Filigrane Monogramme en arrière-plan */}
+        <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-8 select-none pointer-events-none opacity-5">
+          <img 
+            src={`/favicon-noir.${LOGO_EXT}`} 
+            alt="" 
+            className="h-[26rem] w-auto object-contain"
+          />
         </div>
       </section>
 
@@ -798,13 +805,13 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-20 border-b border-neutral-800">
             
             <div className="lg:col-span-5">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-[#A30300] text-white flex items-center justify-center font-black text-lg">
-                  M.
-                </div>
-                <span className="font-extrabold text-2xl tracking-tight text-white">
-                  Médi<span className="text-[#A30300]">art</span>
-                </span>
+              {/* Logo Footer (Version blanche sur fond noir) */}
+              <div className="mb-6">
+                <img 
+                  src={`/logo-blanc.${LOGO_EXT}`} 
+                  alt="Logo Médiart" 
+                  className="h-10 w-auto object-contain" 
+                />
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black mb-6 leading-tight">
