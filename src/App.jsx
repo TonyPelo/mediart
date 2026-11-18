@@ -183,7 +183,7 @@ export default function App() {
               <img
                 src={`/logo-noir.${LOGO_EXT}`} 
                 alt="Logo Médiart" 
-                className="h-10 w-auto object-contain group-hover:opacity-85 transition-opacity"
+                className="h-14 w-auto object-contain group-hover:opacity-85 transition-opacity"
               />
             </a>
 
@@ -321,7 +321,7 @@ export default function App() {
         </div>
 
         {/* Filigrane Monogramme en arrière-plan */}
-        <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-8 select-none pointer-events-none opacity-5">
+        <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-8 select-none pointer-events-none opacity-[0.02]">
           <img 
             src={`/favicon-noir.${LOGO_EXT}`} 
             alt="" 
