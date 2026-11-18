@@ -321,7 +321,7 @@ export default function App() {
         </div>
 
         {/* Filigrane Monogramme en arrière-plan */}
-        <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-8 select-none pointer-events-none opacity-[0.02]">
+        <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-8 select-none pointer-events-none opacity-20">
           <img 
             src={`/favicon-noir.${LOGO_EXT}`} 
             alt="" 
